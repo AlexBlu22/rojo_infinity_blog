@@ -1,1 +1,1 @@
-# rojo_infinity_blog
+# Infinity Blog
