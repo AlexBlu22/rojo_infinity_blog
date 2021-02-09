@@ -5,5 +5,7 @@ Esta rama es para crear/editar las paginas web
 
 Notas:
 ```
-- Barra de titulo: (derecha logo | izquierda esto --> ) "noticias" "tienda" "blog" "icono de user"
+- Barra de titulo:
+- Cuerpo: particiones para las noticias
+- Pie de pagina: enlaces de interes
 ```
