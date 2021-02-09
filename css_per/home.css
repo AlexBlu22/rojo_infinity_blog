@@ -1,10 +1,9 @@
-#cuerpo_pagina
-{
+#cuerpo_pagina {
     margin-left: 15%;
     margin-right: 15%;
 }
-#pie_pagina
-{
+
+#pie_pagina {
     margin-top: 100%;
     text-align: center;
 }
