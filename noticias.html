@@ -1,115 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS|JS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Personal CSS|JS -->
+    <link rel="stylesheet" type="text/css" href="css_per/base.css" />
+    <script src="ls_per/...js"></script>
 
-    <!--CSS/per-->
-    <link rel="stylesheet" type="text/css" href="css_per/noticias.css" />
-
-    <link rel="icon" type="image/png" href="imagen/logo/logo_small_icon_only_inverted_favicon_V2.png" />
+    <!-- Titulo de la pagina -->
     <title>InfinityBlog · Noticias</title>
-</head>
+    <link rel="icon" type="image/png" href="imagen/logo/logo_small_icon_only_inverted_favicon_V2.png" />
+  </head>
+  
+  <body>
+    <!-- Cabeza pagina -->
+    <div id="cabeza_pa">
 
-<body>
-    <!--cabecera_pagina-->
-    <header>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
+      <!-- Navegador comprimido -->
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
 
-                <nav class="nav nav-fill">
-                    <a class="nav-link text-danger" aria-current="page" href="noticias.html">Noticias</a>
-                    <a class="nav-link text-danger" href="tienda.html">Tienda</a>
-                    <a class="nav-link text-danger" href="Blog.html">Blog</a>
-                    <a class="nav-link text-danger" href="sign-in.html">User</a>
-                </nav>
+          <!-- Enlaces -->
+          <nav class="nav nav-fill">
+            <a class="nav-link text-danger" aria-current="page" href="noticias.html">Noticias</a>
+            <a class="nav-link text-danger" href="tienda.html">Tienda</a>
+            <a class="nav-link text-danger" href="blog.html">Blog</a>
+            <a class="nav-link disabled" href="..." tabindex="-1" aria-disabled="true">User</a>
+          </nav>
 
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Titulo página -->
+          <a class="navbar-brand">
+            Noticias
+          </a>
+
+          <!-- Logo|nombre -->
+          <a class="navbar-brand" href="#">
+            <img src="imagen/logo/logo_small_icon_only_inverted.png" width="30" height="30"
+              class="d-inline-block align-top" alt="">
+            Infinity Blog
+          </a>
+        </div>
+      </nav>
+
+    </div>
+
+    <!-- Cuerpo pagina -->
+    <div id="cuerpo_pa">
+      
+      <div class="container-sm">
+
+        <!-- Noticia horizontal -->
+        <div class="card border-danger mb-3">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <!-- Imagen noticia -->
+              <img src="imagen/logo/logo_small_icon_only.png" alt="">
             </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="home.html">
-                    <img src="imagen/logo/logo_small_icon_only_inverted.png" width="30" height="30"
-                        class="d-inline-block align-top" alt="">
-                    Infinity Blog
-                </a>
+            <div class="col-md-8">
+              <div class="card-body">
+                <!-- Nombre|descripción -->
+                <h5 class="card-title">Nombre noticia</h5>
+                <p class="card-text">Descripción rapida de la noticia</p>
+                <!-- Enlace|subida -->
+                <p class="card-text text-danger">Enlace</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
-        </nav>
-    </header>
-
-    <!--cuerpo_pagina-->
-    <body>
-        <div id="cuerpo_pagina">
-            <!--<img src="imagen/portada.png" class="img-fluid rounded" alt="">-->
-            
-            <!--noticias-->
-            <div class="card mb-3" style="max-width: 100%px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Noticia 1</h5>
-                      <p class="card-text">Descripción de la noticia.</p>
-                      <p class="card-text"><small class="text-muted">Ultima actualización hace 3 días</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 100%px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Noticia 2</h5>
-                      <p class="card-text">Descripción de la noticia.</p>
-                      <p class="card-text"><small class="text-muted">Ultima actualización hace 3 días</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card mb-3" style="max-width: 100%px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Noticia 3</h5>
-                      <p class="card-text">Descripción de la noticia.</p>
-                      <p class="card-text"><small class="text-muted">Ultima actualización hace 3 días</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          </div>
         </div>
-    </body>
 
-    <!--pie pagina-->
-    <footer>
-        <div id="pie_pagina" class="bg-dark p-4">
-            <p class="mt-5 mb-3 text-muted">&copy; Infinity Blog 2020-2021</p>
+        <!-- La noticia ira enlazada a otra pagina en la que estará más detallada la noticia -->
+
+        <!-- Prueba -->
+        <div>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
+          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
         </div>
-    </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+      </div>
 
-</body>
+    </div>
 
+    <!-- Pie pagina -->
+    <div id="pie_pa">
+
+      <!-- Enlaces de interes -->
+      <div class="bg-dark p-4">
+        <div class="container-sm">
+          <nav class="nav nav-fill">
+            <a class="nav-link text-danger" href="...">"Enlace de interes"</a>
+            <a class="nav-link text-danger" href="...">"Enlace de interes"</a>
+            <a class="nav-link text-danger" href="...">"Enlace de interes"</a>
+            <a class="nav-link text-danger" href="...">"Enlace de interes"</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="bg-dark p-4">
+        <p class="text-muted">&copy; Infinity Blog 2020-2021</p>
+      </div>
+
+    </div>
+  </body>
 </html>

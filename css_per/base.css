@@ -1,0 +1,31 @@
+body
+{
+
+}
+
+#cabeza_pa
+{
+  /* Menu estatico */
+  /*
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  */
+}
+
+#cuerpo_pa
+{
+  margin: 10px;
+}
+
+#pie_pa
+{
+  text-align: center;
+}
+
+#titulo_noticia
+{
+  text-align: center;
+  
+}
