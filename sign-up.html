@@ -37,30 +37,44 @@
  <body class="text-center">
 
    <main class="form-signin">
-     <img class="mb-4" src="imagen/logo/logo_small_icon_only.png" alt="" width="72">
-     <h1 class="h3 mb-3 fw-normal">Registrarse</h1>
+     <!-- Logo|titulo -->
+      <img class="mb-4" src="imagen/logo/logo_small_icon_only.png" alt="" width="72">
+      <h1 class="h3 mb-3 fw-normal">Registrarse</h1>
 
-     <div class="mb-3">
-      <label for="inputEmail" class="visually-hidden">Correo electrónico</label>
-      <input id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
-     </div>
+      <!-- Camos de registro -->
 
-    <div class="mb-3">
-      <label for="inputPassword" class="visually-hidden">Contraseña</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+      <!-- Correo electronico -->
+      <div class="mb-3">
+        <label for="inputEmail" class="visually-hidden">Correo electrónico</label>
+        <input id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+      </div>
 
-      <label for="repeatInputPassword" class="visually-hidden">Repetir contraseña</label>
-      <input type="password" id="repeatInputPassword" class="form-control" placeholder="Repetir contraseña" required>
-    </div>
+      <!-- Contraseña -->
+      <div class="mb-3">
+        <label for="inputEmail" class="visually-hidden">Contraseña</label>
+        <input type="email" id="inputPassword" class="form-control" placeholder="Contraseña" required>
 
-     <div class="checkbox mb-3">
-       <label>
-         <input type="checkbox" value="accpet-conditions" required> Acepto las Condiciones y Políticas de Privacidad de la página web. 
-       </label>
-     </div>
+        <!-- Repetir contraseña -->
+        <label for="repeatInputPassword" class="visually-hidden">Repetir contraseña</label>
+        <input type="password" id="repeatInputPassword" class="form-control" placeholder="Repetir contraseña" required>
+      </div>
+
+      <!-- Check condiciones -->
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="accpet-conditions" required> Acepto las Condiciones y Políticas de Privacidad de la página web. 
+        </label>
+      </div>
+
+      <!-- Boton registrar -->
      <button class="w-100 btn btn-lg btn-danger" type="submit">Registrarse</button>
+
+     <!-- Enlace -->
      <a class="mt-1 mb-3 text-muted" href="sign-in.html">¿Ya tienes una cuenta creada? Entra aquí</a>
+     
+     <!-- Pie -->
      <p class="mt-5 mb-3 text-muted">&copy; Infinity Blog 2020-2021</p>
+
      </form>
    </main>
 
