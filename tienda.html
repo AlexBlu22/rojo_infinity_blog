@@ -9,6 +9,23 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
     <!-- Personal CSS|JS -->
     <link rel="stylesheet" type="text/css" href="css_per/base.css" />
     <script src="ls_per/...js"></script>
@@ -77,120 +94,65 @@
 
     </div>
 
-    <!-- Cuerpo pagina -->
-    <div id="cuerpo_pa">
+    <body>     
+      <main class="container">
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="display-4">Suscripción</h1>
+          <p class="lead">Suscribete a nuestra pagina para obtener avances, descuentos en los videojuegos y en acceso a participaciones en nuestros torneos privados, en los que podras ganar premios en metalico, consolas y mucho más.</p>
+        </div>
       
-      <div class="container-sm">
-
-        <!-- Menu de selección V2 -->
-        <div class="container">
-          <div class="row justify-content-md-center">
-
-            <!-- Buscador -->
-            <div class="col-xl-auto">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Nombre del juego" aria-label="Search">
-                <button class="btn btn-outline-danger" type="submit">Buscar</button>
-              </form>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Free</h4>
             </div>
-
-          </div>
-
-            <!-- Selector de plataformas -->
-            <div class="row justify-content-md-center p-2">
-
-              <!-- PC -->
-              <div class="col-2">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">PC</label>
-                </div>
-              </div>
-              
-              <!-- Play Station -->
-              <div class="col-2">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Play Station</label>
-                </div>
-              </div>
-
-              <!-- X Box One -->
-              <div class="col-2">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">X Box One</label>
-                </div>
-              </div>
-
-              <!-- Nintendo Switch -->
-              <div class="col-2">
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Nintendo Switch</label>
-                </div>
-              </div>
-
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">€0 <small class="text-muted">/ mensual</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Suscripción Gratis y sin compromiso</li>
+                <li>Acceso a contenido informativo</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-danger">Sign up for free</button>
             </div>
-
           </div>
-
-        
-        
-        <!--
-          El selector esta sin seleccionar
-          <div class="form-check form-switch">
-           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
           </div>
-
-          El selector esta seleccionado
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-          </div>
-
-          Selector con un tik
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-        -->
-
-
-
-        <!-- Noticia horizontal -->
-        <div class="card border-danger mb-3">
-          <div class="row g-0">
-            <div class="col-md-3">
-              <!-- Imagen noticia -->
-              <img src="imagen/logo/logo_small_icon_only.png" alt="">
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Silver</h4>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <!-- Nombre|descripción -->
-                <h5 class="card-title">Nombre noticia</h5>
-                <p class="card-text">Descripción rapida de la noticia</p>
-                <!-- Enlace|subida -->
-                <p class="card-text text-danger">Enlace</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">€15 <small class="text-muted">/ mensual</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Acceso a descuentos de 5-10%</li>
+                <li>en 10 videojuegos destacados</li>
+                <li> de cada semana.</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-danger">Sign up</button>
             </div>
+          </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Gold</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">€29 <small class="text-muted">/ mensual</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Acceso a descuentos de 5-20%</li>
+                <li>en todos los juegos.</li>
+                <li>Notificación de lanzamientos</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-danger">Sign up</button>
+            </div>
+          </div>
           </div>
         </div>
+      </main>
 
-        <!-- Prueba -->
-        <div>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-          <p>Aquí están todas las respuestas de Párrafo largo en un discurso, conversación, etc.. ¡Esta pregunta es parte del popular juego CodyCross! Este juego ha sido desarrollado por Fanatee Games, una empresa de videojuegos muy famosa. Dado que ya está aquí, es probable que esté atrapado en un nivel específico y esté buscando nuestra ayuda. No busque más porque acabamos de terminar de resolver todas las Respuestas de CodyCross. Lo mejor de este juego es que puedes sincronizar con FB y si cambias tu smartphone puede empezar a reproducirlo cuando lo dejó. Le recomendamos que marque nuestra web para que pueda mantenerse actualizado con los últimos niveles.</p>
-        </div>
+    
       </div>
 
     </div>
