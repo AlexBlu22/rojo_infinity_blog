@@ -9,6 +9,10 @@ class designer extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'id_designers','designers_name'
+    ];
+
     protected $primaryKey = 'id_designers';
 
     

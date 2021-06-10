@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->enum('subscription_type',['bronze', 'silver', 'gold']);
             $table->integer('store_id_store');
             $table->unsignedInteger('id_game');
+
+            $table->foreign('store_id_store')->references('id_user')->on('users');
         });
     }
 

@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'article_id','article_title','article_author','publication_date','number_views','number_likes','id_comment','comments_id_comment','comments_id_author','author_id'
+    ];
     
     protected $primaryKey = 'article_id';
 
@@ -16,7 +20,7 @@ class Article extends Model
     }
 
     public function comment(){
-        return $this->hasMany(comment::class.'id_article');
+        return $this->hasMany(comment::class);
     }
 
 }

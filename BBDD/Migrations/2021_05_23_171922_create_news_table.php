@@ -18,6 +18,8 @@ class CreateNewsTable extends Migration
             $table->string('Noticias')->nullable();
             $table->string('Blog')->nullable();
             $table->unsignedInteger('articles_article_id');
+
+            $table->foreign('articles_article_id')->references('id_Noticias')->on('news');
         });
     }
 

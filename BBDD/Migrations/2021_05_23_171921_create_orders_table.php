@@ -20,6 +20,9 @@ class CreateOrdersTable extends Migration
             $table->unsignedInteger('number_products')->nullable();
             $table->double('total_price')->nullable();
             $table->double('discount')->nullable()->unsigned();
+
+            $table->foreign('product_id')->references('order_id')->on('orders');
+            $table->foreign('id_user')->references('order_id')->on('orders');
         });
     }
 

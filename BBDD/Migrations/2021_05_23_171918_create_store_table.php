@@ -19,6 +19,8 @@ class CreateStoreTable extends Migration
             $table->string('juegos');
             $table->integer('carrito')->nullable();
             $table->integer('factura')->nullable();
+
+            $table->foreign('store_id_store')->references('id_user')->on('users');
         });
     }
 

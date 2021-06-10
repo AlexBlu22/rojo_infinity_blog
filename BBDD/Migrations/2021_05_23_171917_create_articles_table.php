@@ -24,6 +24,10 @@ class CreateArticlesTable extends Migration
             $table->unsignedInteger('comments_id_comment');
             $table->unsignedInteger('comments_id_author');
             $table->unsignedInteger('author_id');
+
+
+            $table->foreign('comments_id_comment')->references('id_comment')->on('comments');
+            $table->foreign('comments_id_author')->references('id_author')->on('comments');
         });
     }
 

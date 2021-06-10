@@ -9,11 +9,14 @@ class Developer extends Model
 {
     use HasFactory;
 
+protected $fillable = [
+        'id_developers','developers_name'
+    ];
 
     protected $primaryKey = 'id_developers';
 
     
     public function game(){
-        return $this->belongsToMany(game::class, 'id_games');
+        return $this->belongsToMany(game::class);
     }
 }
