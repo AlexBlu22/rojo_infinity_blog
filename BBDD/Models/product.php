@@ -10,17 +10,24 @@ class product extends Model
     use HasFactory;
 
     protected $fillable = [
-        'product_id','product_name','number_copies','price'
+        'product_name',
+        'number_copies',
+        'price';
     ];
 
-    protected $primaryKey = 'product_id';
-
-    public function order(){
-        return $this->belongsTo(order::class);
+    public function games(){
+        return $this hasMany(games::class);
     }
 
-    public function game(){
-        return $this->hasMany(game::class);
+    
+    public function orders(){
+        return $this belongsToMany(order::class);
     }
+
+    
+    public function stores(){
+        return $this belongsToMany(store::class);
+    }
+
 
 }

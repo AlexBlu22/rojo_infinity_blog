@@ -9,14 +9,7 @@ class payment extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'id_payment','payment_name','paymentcard_id_paymentcard'
-    ];
-
-    protected $primaryKey = 'id_payment';
-
-
-    public function paymentcard(){
-        return $this->belongsTo(paymentcard::class);
+    public function paymentcards(){
+        return $this belongsToOne(paymentcard::class);
     }
 }

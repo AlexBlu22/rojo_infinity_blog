@@ -2,40 +2,56 @@
 
 namespace App\Models;
 
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-class user extends Model
+class User extends Authenticatable
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
-        'id_user','username','user_password','user_email_verify','user_address','subscription_type','store_id_store','id_game'
+        'name',
+        'email',
+        'apellido'
     ];
 
-    protected $primaryKey = 'id_user';
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+    ];
 
-    public function store(){
-        return $this->hasOne(store::class);
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+
+    public function paymentcards(){
+        return $this hasMany(paymentcard::class);
     }
 
-    public function payment(){
-        return $this->hasOne(paymentcard::class);
+    public function orders(){
+        return $this hasMany(order::class);
     }
 
-    public comment(){
-        return $this->hasMany(comment::class);
+    
+    public function comments(){
+        return $this hasMany(comments::class);
     }
 
-    public function order(){
-        return $this->hasMany(order::class);
+    public function articles(){
+        return $this hasMany(article::class);
     }
 
-    public function article(){
-        return $this->hasMany(article::class);
-    }
-
-    public function game(){
-        return $this->belongsToMany(game::class);
-    }
 }

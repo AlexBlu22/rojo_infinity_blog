@@ -10,16 +10,20 @@ class order extends Model
     use HasFactory;
 
     protected $fillable = [
-        'order_id','product_id','id_user','number_products','total_price','discount'
+        'order_name',
+        'total_price',
+        'discount',
+        'user_id',
     ];
 
-    protected $primaryKey = 'order_id';
-
-    public function product(){
-        return $this->hasOne(product::class);
+    
+    public function users(){
+        return $this belongsTo(user::class);
     }
 
-    public function user(){
-        return $this->belongsTo(user::class);
+    
+    public function products(){
+        return $this hasMany(product::class);
     }
+
 }

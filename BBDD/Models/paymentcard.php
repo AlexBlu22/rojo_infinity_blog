@@ -10,17 +10,20 @@ class paymentcard extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id_paymentcard','paymentcard_number','paymentcard_headline','paymentcard_expiration','paymentcard_type','payment_cvc','users_id_user'
+        'paymentcard_number',
+        'paymentcard_headline',
+        'paymentcard_expiration_date',
+        'paymentcard_type',
+        'paymentcard_cvc',
+        'user_id',
     ];
-
-    protected $primaryKey = 'id_paymentcard';
-
-
-    public function user(){
-        return $this->belongsTo(user::class);
+    
+    public function users(){
+        return $this belongsToOne(user::class);
     }
 
-    public function payment(){
-        return $this->hasMany(payment::class);
+    public function payments(){
+        return $this hasMany(payment::class);
     }
+
 }

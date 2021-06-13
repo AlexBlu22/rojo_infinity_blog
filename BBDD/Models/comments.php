@@ -5,29 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class article extends Model
+class comments extends Model
 {
     use HasFactory;
 
-
     protected $fillable = [
-        'article_title',
-        'article_author',
-        'publication_date',
-        'number_views',
-        'number_likes',
+        'id_user',
         'body',
     ];
-
-
+    
     public function users(){
         return $this belongsTo(User::class);
     }
-
     
-    public function comments(){
-        return $this hasMany(comments::class);
+    public function articles(){
+        return $this belongsToMany(article::class);
     }
-
-
 }
